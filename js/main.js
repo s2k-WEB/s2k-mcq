@@ -7,28 +7,12 @@ s2k_Input.addEventListener("keyup", function(event) {
         document.getElementById("s2k_Btn").click();
     }
 });
-
-function mytimer(arg1) {
-    let width = arg1;
-    var s2k_id = setInterval(function(){
-        if (width == 0) {
-            clearInterval(s2k_id);
-            s2k_Btn.textContent = `Query!`;
-            s2k_Btn.onclick = s2k_query.get();
-        } else {
-            width--; 
-            s2k_Btn.textContent = width; 
-        }
-    }, 1000);
-}
-
 var s2k_query = {
     get: function() {
         let ipformat = /^(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$/;
         let s2k_txt = `<span>IP: `;
         let s2k_parts = s2k_Input.value.split(":");
         let s2k_ip = s2k_parts[0];
-        
         if (s2k_ip.match(ipformat)) {
             s2k_txt += `${s2k_ip}<br>Port: `;
             let s2k_port = 25565;
