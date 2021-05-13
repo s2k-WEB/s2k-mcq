@@ -1,0 +1,52 @@
+*, *:before, *:after {
+    -webkit-box-sizing:  border-box;
+    -moz-box-sizing:  border-box;
+    box-sizing:  border-box;
+}
+html, body {
+    height: 100%;
+    margin: 0;    
+    padding: 0;
+}
+.container {
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    background: linear-gradient(to bottom,  lightseagreen 0%,rgb(13, 73, 70) 100%);
+}
+.header {
+    display: flex;
+    flex-flow: row wrap;
+}
+#s2k_Input, #s2k_Btn, .main, .timer {
+    font-size: 4ch;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#s2k_Input {
+    flex: 2;
+    border-radius: 12px;
+    border: 4px solid black;
+    padding-left: 1ch;
+    padding-right: 1ch;
+}
+#s2k_Btn {
+    border-radius: 12px;
+    border: 4px solid black;
+    padding-left: 1ch;
+    padding-right: 1ch;
+}
+#s2k_Input::placeholder {
+    opacity: 0.33;
+}
+.main {
+    flex: 2;
+}
+.footer {
+    font-family: "Arial Black", Gadget, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 1ch;
+    color: black;
+    background-color: snow;
+}
