@@ -2,4 +2,4 @@
 
 Varga Gyuri barátom gyerekeinek egy kis Minecraft server lekérdező tool.
 
-[Click here to visit the site on github pages !](https://s2k-web.github.io/rock-paper-scisor/)
+[Click here to visit the site on github pages !](https://s2k-web.github.io/s2k-mcq/)
