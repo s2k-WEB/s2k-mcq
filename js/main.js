@@ -28,8 +28,8 @@ var s2k_query = {
                 port: s2k_port,
             }, function (s2k_err, s2k_status) {
                 if (s2k_err) {
-                    return document.querySelector('.main').innerHTML = `<span>Error loading status of server at IP: ${s2k_ip}:${s2k_port}<br>
-                                                                        They server may not run or unreachable !
+                    return document.querySelector('.main').innerHTML = `<span>Hiba az ${s2k_ip}:${s2k_port} címen megadott szerver lekérdezésekor !.<br>
+                                                                        A szerver nem fut vagy nem elérhető !
                                                                         </span>`;
                 }
                 let s2k_txt_error = ``;
@@ -49,7 +49,7 @@ var s2k_query = {
                 document.querySelector('.main').innerHTML = s2k_txt;
             });
          } else {
-            s2k_Main.innerHTML = `<span>Helytelen IP címet adtál meg !<span><br><span>Helyes IP cím például: 89.148.79.162</span><br>Vagy ha a portot is meg akarod határozni: 89.148.79.162:25565`;
+            s2k_Main.innerHTML = `<span>Helytelen IP címet adtál meg te hurkalé !<span><br><span>Helyes IP cím például: 89.148.79.162</span><br>Vagy ha a portot is meg akarod határozni: 89.148.79.162:25565`;
         }
     },
 }
